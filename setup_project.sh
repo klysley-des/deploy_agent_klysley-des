@@ -4,7 +4,7 @@ read -p "Enter the project name: " project_name
 project_dir="attendance_tracker_${project_name}"
 cleanup() {
 echo "Script was interrupted."
-tar -czf "attendance_tracker_${project_dir}_archive.tar.gz" "$project_dir"
+tar -czf "${project_dir}_archive.tar.gz" "$project_dir"
 rm -rf "$project_dir"
 echo "Project archived successfully."
 echo "Incomplete directory has been removed."
